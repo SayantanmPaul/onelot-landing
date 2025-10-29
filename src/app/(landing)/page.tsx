@@ -1,8 +1,8 @@
 'use client';
 
-import HeroDashboard from '@/assets/images/platform/dashboard_1.webp';
+import ComplianceAuthoritiesSection from '@/components/sections/ComplianceAuthorities';
+import BusinessGrowthSection from '@/components/sections/features/BusinessGrowth';
 import HeroSection from '@/components/sections/Hero';
-import Image from 'next/image';
 
 const Landing = () => {
   return (
@@ -10,19 +10,12 @@ const Landing = () => {
       aria-label="OneLot Landing Page"
       className="flex flex-col gap-1.5 items-center h-full justify-start w-full"
     >
-      <div className="lg:h-9 lg:block hidden w-full" />
+      <div role="separator" aria-hidden="true" className="lg:h-9 lg:block hidden w-full" />
       <HeroSection />
-      <Image
-        src={HeroDashboard}
-        alt="OneLot's dealership management platform"
-        width={1080}
-        height={653}
-        className="lg:w-[1080px] w-[609px] h-full"
-        draggable={false}
-        priority={true}
-        placeholder="blur"
-        blurDataURL={HeroDashboard.src}
-      />
+      <ComplianceAuthoritiesSection />
+      <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
+      <BusinessGrowthSection />
+      <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
     </section>
   );
 };
