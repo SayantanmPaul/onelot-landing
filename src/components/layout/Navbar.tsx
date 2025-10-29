@@ -1,7 +1,7 @@
 'use client';
 
 import BrandLogo from '@/assets/logo/iconwithtext.webp';
-import { Menu } from 'lucide-react';
+import { Menu, MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -56,7 +56,7 @@ export default function Navbar() {
     <nav
       role="navigation"
       aria-label="Main Navigation"
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-100   ${
+      className={` w-full z-50 transition-all duration-100   ${
         isScrolled ? 'bg-background backdrop-blur-md border-b border-border' : 'bg-background'
       }`}
     >
@@ -71,6 +71,8 @@ export default function Navbar() {
                 width={100}
                 height={50}
                 className="w-[100px] size-full object-contain"
+                draggable={false}
+                priority
               />
             </Link>
             {/* Desktop Navigation */}
@@ -87,12 +89,12 @@ export default function Navbar() {
             className="lg:hidden hover:text-primary p-2"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <Menu size={25} strokeWidth={2.6} aria-hidden="true" />
+            <MenuIcon className="size-6.5" strokeWidth={2.8} aria-hidden="true" />
           </button>
         </div>
         {/* Mobile Navigation */}
         {menuOpen && (
-          <div id="mobile-navigation" className="lg:hidden" role="dialog" aria-modal="true">
+          <div id="mobile-navigation" className="lg:hidden block" role="dialog" aria-modal="true">
             <MobileNav />
           </div>
         )}
@@ -152,7 +154,7 @@ const DesktopNav = () => {
 const MobileNav = () => {
   const pathname = usePathname();
   return (
-    <div className="-space-y-1 lg:hidden backdrop-blur-sm">
+    <div className="-space-y-1 lg:hidden block backdrop-blur-sm">
       <div className=" px-5 py-3 space-y-4 flex flex-col w-full">
         {NAV_LINKS.map((item, i) => {
           const active = pathname === item.href;
