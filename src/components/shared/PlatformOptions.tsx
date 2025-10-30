@@ -31,8 +31,8 @@ const PlatformOptions: React.FC<PlatformOptionsProps> = ({
 }) => {
   const imagePositionClass =
     imgPosition === 'left'
-      ? 'lg:flex-row flex-col lg:pr-9'
-      : 'lg:flex-row-reverse flex-col lg:pl-9';
+      ? 'lg:flex-row flex-col-reverse lg:pr-9'
+      : 'lg:flex-row-reverse flex-col-reverse lg:pl-9';
   return (
     <section
       className={`flex items-center justify-around lg:gap-24 gap-8 ${imagePositionClass} md:px-6 px-5`}

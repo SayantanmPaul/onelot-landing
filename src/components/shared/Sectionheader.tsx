@@ -12,9 +12,9 @@ const SectionHeader: React.FC<DashboardHeaderProps> = ({ label, className, id })
       id={id}
       aria-label={label}
       className={cn(
-        `lg:text-3xl text-xl lg:font-bold font-bold lg:leading-9 leading-7 text-foreground`,
+        `lg:text-4xl text-xl lg:font-extrabold font-bold lg:leading-9 leading-7 text-foreground`,
         className,
-      )}    
+      )}
     >
       {label}
     </h2>

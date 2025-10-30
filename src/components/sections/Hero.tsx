@@ -1,7 +1,7 @@
 import HeroDashboard from '@/assets/images/platform/dashboard_1.webp';
 import Image from 'next/image';
 import Link from 'next/link';
-import Header from '../shared/Heade';
+import Header from '../shared/Header';
 import SubHeader from '../shared/Subheader';
 import { Button } from '../ui/button';
 

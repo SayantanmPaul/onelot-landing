@@ -4,7 +4,7 @@ import PlatformOptions from '@/components/shared/PlatformOptions';
 
 const FeatureListSection = () => {
   return (
-    <section className="lg:py-24 py-12 w-full space-y-[84px]">
+    <section className="lg:py-24 py-9 w-full lg:space-y-[84px] space-y-5">
       <PlatformOptions
         title="Car Financing"
         subtitle="Dealer Loans"
