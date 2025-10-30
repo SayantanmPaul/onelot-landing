@@ -1,11 +1,13 @@
 'use client';
 
 import ComplianceAuthoritiesSection from '@/components/sections/ComplianceAuthorities';
+import FaqSection from '@/components/sections/FaqSection';
 import BusinessGrowthSection from '@/components/sections/features/BusinessGrowth';
 import FeatureListSection from '@/components/sections/features/FeatureList';
 import HeroSection from '@/components/sections/Hero';
 import Testimonials from '@/components/sections/Testimonials';
 import WhyOneLotSection from '@/components/sections/WhyOneLotSection';
+import Devider from '@/components/shared/Devider';
 
 const Landing = () => {
   return (
@@ -16,14 +18,15 @@ const Landing = () => {
       <div role="separator" aria-hidden="true" className="lg:h-9 lg:block hidden w-full" />
       <HeroSection />
       <ComplianceAuthoritiesSection />
-      <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
+      <Devider />
       <BusinessGrowthSection />
-      <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
+      <Devider />
       <FeatureListSection />
       <WhyOneLotSection />
-      <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
+      <Devider />
       <Testimonials />
-      <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
+      <Devider />
+      <FaqSection />
     </section>
   );
 };

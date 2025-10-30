@@ -89,7 +89,7 @@ export default function Navbar() {
             className="lg:hidden hover:text-primary p-2"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <MenuIcon className="size-6.5" strokeWidth={2.8} aria-hidden="true" />
+            <MenuIcon className="size-6.5" strokeWidth={2.6} aria-hidden="true" />
           </button>
         </div>
         {/* Mobile Navigation */}

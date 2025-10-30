@@ -66,7 +66,7 @@ const Testimonials: React.FC = () => {
       >
         <CarouselContent>
           {TESTIMONIALS.map((card, i) => (
-            <CarouselItem key={i}>
+            <CarouselItem key={i} className="-z-10">
               <TesimoniCard {...card} />
             </CarouselItem>
           ))}
