@@ -1,5 +1,6 @@
 'use client';
 
+import CallToAction from '@/components/sections/CallToAction';
 import ComplianceAuthoritiesSection from '@/components/sections/ComplianceAuthorities';
 import FaqSection from '@/components/sections/FaqSection';
 import BusinessGrowthSection from '@/components/sections/features/BusinessGrowth';
@@ -27,6 +28,7 @@ const Landing = () => {
       <Testimonials />
       <Devider />
       <FaqSection />
+      <CallToAction />
     </section>
   );
 };
