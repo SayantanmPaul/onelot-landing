@@ -1,3 +1,4 @@
+import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
 
 export default function LandingLayout({
@@ -11,6 +12,9 @@ export default function LandingLayout({
         <Navbar />
       </header>
       <div className="max-w-360 mx-auto w-full ">{children}</div>
+      <div className="max-w-360 mx-auto w-full">
+        <Footer />
+      </div>
     </main>
   );
 }

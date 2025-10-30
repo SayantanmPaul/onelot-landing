@@ -1,7 +1,7 @@
 'use client';
 
 import BrandLogo from '@/assets/logo/iconwithtext.webp';
-import { Menu, MenuIcon } from 'lucide-react';
+import { MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';

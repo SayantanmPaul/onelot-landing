@@ -85,7 +85,7 @@ const FaqSection: React.FC = () => {
       </Accordion>
       <Link href="#">
         <Button className="text-sm font-medium leading-4 w-25 h-10 cursor-pointer">
-          See all <MoveRightIcon className="size-5" />
+          See all <MoveRightIcon className="size-4" />
         </Button>
       </Link>
     </section>
