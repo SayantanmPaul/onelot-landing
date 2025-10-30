@@ -55,11 +55,16 @@ const WhyOneLotSection: React.FC = () => {
         label="Why OneLot"
         className="text-center text-3xl font-extrabold"
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 gap-5 justify-center flex-wrap">
+      <ul
+        role="list"
+        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 gap-5 justify-center flex-wrap"
+      >
         {INFO_CARD_DATA.map((item, i) => (
-          <InfoCard key={`card-${i}`} {...item} />
+          <li key={`card-${i}`}>
+            <InfoCard {...item} />
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };
@@ -67,9 +72,16 @@ export default WhyOneLotSection;
 
 const InfoCard: React.FC<InfoCardProps> = ({ icon, iconAlt, title, description }) => {
   return (
-    <div className="flex flex-col lg:gap-5 gap-1 lg:w-68 w-full h-full rounded-lg shadow-sm border lg:p-6 p-5 items-center">
+    <div
+      role="group"
+      aria-labelledby={`${title.toLowerCase()}-title`}
+      className="flex flex-col lg:gap-5 gap-1 lg:w-68 w-full h-full rounded-lg shadow-sm border lg:p-6 p-5 items-center"
+    >
       <div className="lg:space-y-6 space-y-4 flex flex-col items-center">
-        <span className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#F5EBF9] ">
+        <span
+          aria-hidden="true"
+          className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#F5EBF9] "
+        >
           <Image
             src={icon}
             alt={iconAlt}
@@ -80,7 +92,12 @@ const InfoCard: React.FC<InfoCardProps> = ({ icon, iconAlt, title, description }
             priority
           />
         </span>
-        <p className="lg:text-2xl text-xl font-semibold leading-8 tracking-tight">{title}</p>
+        <h4
+          id={`${title.toLowerCase()}-title`}
+          className="lg:text-2xl text-xl font-semibold leading-8 tracking-tight"
+        >
+          {title}
+        </h4>
       </div>
       <p className="text-secondary text-base leading-7 font-normal text-center">{description}</p>
     </div>
