@@ -58,10 +58,10 @@ const FeatureCards: React.FC = () => {
         icon={DollarIcon}
         iconAlt="Dollar icon"
         iconBg="#D6F2F5"
-        iconColor="#4DC9D6"
+        iconColor="#007A89"
         title="Dealer Loans"
         subtitle="Accelerate your growth with tailored loan solutions"
-        subtitleColor="text-[#4DC9D6]"
+        subtitleColor="text-[#007A89]"
         description="Get comprehensive car financing solutions, unlock the potential of your dealership and take it to new heights."
       />
       <FeatureCard

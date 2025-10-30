@@ -39,7 +39,7 @@ const LanguageSelection: React.FC = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="cursor-pointer">
-        <span className="text-xs leading-5 font-normal flex items-center gap-2">
+        <button type="button" className="text-xs leading-5 font-normal flex items-center gap-2">
           {languages[selectLanguage].short.toUpperCase()}
           <Image
             src={languages[selectLanguage].icon}
@@ -50,7 +50,7 @@ const LanguageSelection: React.FC = () => {
             draggable={false}
           />
           <ChevronDownIcon className="size-4" />
-        </span>
+        </button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-fit p-2" align="end">

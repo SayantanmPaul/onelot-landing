@@ -92,12 +92,12 @@ const InfoCard: React.FC<InfoCardProps> = ({ icon, iconAlt, title, description }
             priority
           />
         </span>
-        <h4
+        <h3
           id={`${title.toLowerCase()}-title`}
           className="lg:text-2xl text-xl font-semibold leading-8 tracking-tight"
         >
           {title}
-        </h4>
+        </h3>
       </div>
       <p className="text-secondary text-base leading-7 font-normal text-center">{description}</p>
     </div>

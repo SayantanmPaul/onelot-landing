@@ -4,7 +4,7 @@ import SubHeader from '../shared/Subheader';
 
 const ComplianceAuthoritiesSection = () => {
   return (
-    <section role="region" className="w-full flex flex-col items-center gap-3">
+    <section className="w-full flex flex-col items-center gap-3">
       <SubHeader label="Regulated by" />
       <Image
         src={SECP}

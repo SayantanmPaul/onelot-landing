@@ -35,10 +35,10 @@ const NAV_LINKS: NavLinkProps[] = [
       { href: '/products/dealer-management-system', label: 'Dealer Management System' },
     ],
   },
-  { href: '/products/sell-your-cars', label: 'Sell Your Cars' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-  { href: '/blog', label: 'Blog' },
+  { href: '#', label: 'Sell Your Cars' },
+  { href: '#', label: 'About' },
+  { href: '#', label: 'Contact' },
+  { href: '#', label: 'Blog' },
 ];
 
 export default function Navbar() {
@@ -206,7 +206,7 @@ const NavAction = () => {
   return (
     <div className="px-2 lg:px-0 flex lg:flex-row flex-col lg:gap-8 gap-2">
       <Link href="/" aria-label="Log in to OneLot">
-        <Button className=" items-center lg:px-0 lg:bg-transparent bg-primary-foreground text-foreground text-base leading-6 font-medium w-full hover:bg-transparent cursor-pointer">
+        <Button className=" h-[42px] items-center lg:px-0 lg:bg-transparent bg-primary-foreground text-foreground text-base leading-6 font-medium w-full hover:bg-transparent cursor-pointer">
           Log In
         </Button>
       </Link>

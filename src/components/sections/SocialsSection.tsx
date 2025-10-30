@@ -117,7 +117,6 @@ const SocialPostCard = ({
       loading="lazy"
       placeholder={imageBlur ? 'blur' : 'empty'}
       blurDataURL={imageBlur}
-      quality={80}
       sizes="(max-width: 768px) 50vw, 280px"
     />
   );

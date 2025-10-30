@@ -12,9 +12,9 @@ interface FooterLinkProps {
 
 const FOOT_LINKS: FooterLinkProps[] = [
   { href: '/', label: 'Home' },
-  { href: '/feature', label: 'Feature' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
+  { href: '#', label: 'Feature' },
+  { href: '#', label: 'About' },
+  { href: '#', label: 'Contact' },
 ];
 
 export default function Footer() {
