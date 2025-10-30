@@ -48,7 +48,7 @@ const Testimonials: React.FC = () => {
   return (
     <section
       aria-labelledby="testimonials-heading"
-      className="space-y-6 lg:space-y-12 w-full px-5 lg:py-10 py-24 flex flex-col items-center"
+      className="space-y-6 lg:space-y-12 w-full px-5 py-24 flex flex-col items-center"
     >
       <SectionHeader
         id="testimonials-heading"

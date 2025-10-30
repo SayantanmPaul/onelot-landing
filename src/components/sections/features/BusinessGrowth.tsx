@@ -52,7 +52,7 @@ const FeatureCards: React.FC = () => {
   return (
     <div
       role="list"
-      className="flex md:flex-row lg:flex-col flex-col md:max-w-3xl lg:max-w-2xl max-w-72 lg:gap-6 gap-8"
+      className="flex md:flex-row lg:flex-col flex-col md:max-w-3xl lg:max-w-2xl max-w-76 lg:gap-6 gap-8"
     >
       <FeatureCard
         icon={DollarIcon}

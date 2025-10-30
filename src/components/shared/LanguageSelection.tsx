@@ -53,7 +53,7 @@ const LanguageSelection: React.FC = () => {
         </span>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-fit p-2" align="start">
+      <DropdownMenuContent className="w-fit p-2" align="end">
         <DropdownMenuGroup>
           {Object.entries(languages).map(([key, lang]) => (
             <DropdownMenuItem

@@ -6,6 +6,7 @@ import FaqSection from '@/components/sections/FaqSection';
 import BusinessGrowthSection from '@/components/sections/features/BusinessGrowth';
 import FeatureListSection from '@/components/sections/features/FeatureList';
 import HeroSection from '@/components/sections/Hero';
+import SocialsSection from '@/components/sections/SocialsSection';
 import Testimonials from '@/components/sections/Testimonials';
 import WhyOneLotSection from '@/components/sections/WhyOneLotSection';
 import Devider from '@/components/shared/Devider';
@@ -27,6 +28,7 @@ const Landing = () => {
       <Devider />
       <Testimonials />
       <Devider />
+      <SocialsSection />
       <FaqSection />
       <CallToAction />
     </section>
