@@ -4,6 +4,7 @@ import ComplianceAuthoritiesSection from '@/components/sections/ComplianceAuthor
 import BusinessGrowthSection from '@/components/sections/features/BusinessGrowth';
 import FeatureListSection from '@/components/sections/features/FeatureList';
 import HeroSection from '@/components/sections/Hero';
+import Testimonials from '@/components/sections/Testimonials';
 import WhyOneLotSection from '@/components/sections/WhyOneLotSection';
 
 const Landing = () => {
@@ -20,6 +21,8 @@ const Landing = () => {
       <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
       <FeatureListSection />
       <WhyOneLotSection />
+      <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
+      <Testimonials />
       <div role="separator" aria-hidden="true" className="w-full border-t border-border" />
     </section>
   );
